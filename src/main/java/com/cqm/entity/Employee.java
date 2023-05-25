@@ -5,9 +5,11 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 public class Employee implements Serializable {
+
 
     private static final long serialVersionUID = 1L;
 
@@ -27,9 +29,9 @@ public class Employee implements Serializable {
 
     private Integer status;
 
-    private LocalDateTime createTime;
+    private Date createTime;
 
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
     @TableField(fill = FieldFill.INSERT)
     private Long createUser;
